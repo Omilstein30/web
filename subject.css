@@ -1,11 +1,15 @@
 body {
-   background: #efefef;
+   background: #8a9e85;
    font-family: arial;
 }
 nav {
 	width: 100%;
 	height: 100px;
-	background-color: #fff;
+	background-color: #333d30;
+}
+
+ul {
+	margin-left: 60px; 
 }
 h2 {
    font-size: 18px;
@@ -13,16 +17,46 @@ h2 {
 p {
    font-style: arial;
 }
-ul li {
-	list-style: none;
-	display: inline-block;
-	float: left;
-	line-height: 100px;
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-ul li a {
-	text-decoration: none;
-	font-size: 14px;
-	font-family: arial;
-	color: #1e1e1e;
-	padding: 0 20px;
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 40px;
+  position: relative;
+}
+
+nav a::before {
+  content: '';
+  display: flex;
+  height: 10px;
+  background-color: #7f807e;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 100ms;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: bold:
+  font-size: 14px;
+}
+
+nav a:hover {
+	color: red; 
+}
+nav a:hover::before {
+  width: 100%;
+}
+
+.fit-picture {
+	width: 250px;
 }
