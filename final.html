@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <title>Fantasy Football Calculator</title>
+    <link rel="stylesheet" href= "football.css">
+  </head>
+
+  <body>
+    <nav>
+        <ul>
+      <li><a href="final.html">Home </a></li>
+      <li><a href="gamegraphs.html">Graphs</a></li>
+        </ul>
+    </nav>
+	  <h1>Fantasy Football Calculator</h1>
+	  <h2>Oliver Milstein, Max Schneider</h2>
+	  <h3>Period 5</h3>
+	  <h3>What is the python score calculator?</h3>
+	  <p>On the simplest level, this program takes a dictionary of players and returns their fantasy football score and their value. Since this score is readily available to the public in a variety of ways already, the value metric is the more key component. The value metric works on two factors. The first is an average player season, based on their position, as determined by us. We provide it because data fluctuates a lot every season, skewing data. For example in 2020, two top tight ends, George Kittle and Zach Ertz got hurt, lowering the average tight end scores. The other factor is more indicative of the fluctuation. It takes an additional dictionary of data to determine positional averages and compares players to that. These two comparisons create a dynamic score that is unique just to us. When we applied this to the top 12 QBs, TEs, Ks, and top 30 RBs and WRs (Average fantasy starters), we found several key results. The highest rated player was Alvin Kamara, the best running back, whose value soared over everyone else. His production, while good, was not nearly as good as top quarterbacks. However, the significant dropoff in quality of running backs, making the top ones more valuable. A similar trend was there for tight ends, making the second most valuable player, top tight end, Travis Kelce. A quarterback was not listed until #6, showing the trend that quarterbacks are not as valuable as one might think.<p>
+	<h3>How Does it Work and What Does it do?</h3>
+	<p>Get_scores: Takes a dictionary of players and statistics and determines the scores of each player in the list. Returns a dictionary of players and their scores.
+
+	Get_ranks: Takes a dictionary of players and statistics and determines the ranking of each player as a whole. Returns a dictionary of players and their ranks.
+
+	Compiling: A key function in the program, it takes a dictionary of players and statistics and determines the average score for every position. 
+
+	Get_pos_ranks: Takes a dictionary of players and statistics and determines and ranks players by their score at their position. Returns a dictionary of players and their positional rank:
+
+	Get_value: The Keystone function of the program, it determines a player's value using two inputs. The first input determines the players who need to be assigned a value. The second one takes the players who should determine the positional average. This allows for a comprehensive average without too many outputs. Get_value takes the two dictionary inputs and compares the players to an average season as provided by us and to the compiling average, giving a total value, which is returned with the players in a dictionary.
+
+	Get_analyzed_ranks: Similar to get_ranks, but instead of score it uses values.
+
+	Modify: Changes the players name to numbers, making graphs easier to read
+
+	Counting: Helps create the ticks on the X-axis of the graphs
+
+	Acquire_color: Changes the colors of the bars on the graph based on position</p>
+	<h3>Instructions</h3>
+        <p>The program is used by inserting a list of players and stats. In the current code, we have the top 12 quarterbacks, tight ends and kickers, and the top 30 running backs and wide receivers - indicative of all the starters in a fantasy football league. We also have additional lists for each position. These lists are then inserted into the final print statement and the graphs, to get results. </p>
+  </body>
+
+</html>
